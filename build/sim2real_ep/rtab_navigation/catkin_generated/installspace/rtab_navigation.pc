@@ -1,0 +1,8 @@
+prefix=/home/sim2real/ep_ws/install
+
+Name: rtab_navigation
+Description: Description of rtab_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/sim2real/ep_ws/install
+
+Name: ep_detect_and_grasp
+Description: Description of ep_detect_and_grasp
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

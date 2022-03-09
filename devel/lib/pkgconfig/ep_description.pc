@@ -1,0 +1,8 @@
+prefix=/home/sim2real/ep_ws/devel
+
+Name: ep_description
+Description: Description of ep_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: urdf xacro

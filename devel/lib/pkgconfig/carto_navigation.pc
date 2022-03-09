@@ -1,0 +1,8 @@
+prefix=/home/sim2real/ep_ws/devel
+
+Name: carto_navigation
+Description: Description of carto_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: cartographer_ros_msgs cartographer_ros move_base teb_local_planner
