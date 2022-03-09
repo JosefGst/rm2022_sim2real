@@ -1,6 +1,6 @@
 DWAPlannerROS:
   # Robot Configuration Parameters
-  max_vel_x: 0.35
+  max_vel_x: 0.25
   min_vel_x: -0.25
 
   max_vel_y: 0.25
