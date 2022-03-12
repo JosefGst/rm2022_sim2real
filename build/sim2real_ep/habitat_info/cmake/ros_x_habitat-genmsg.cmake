@@ -49,7 +49,7 @@ add_custom_target(_ros_x_habitat_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv" NAME_WE)
 add_custom_target(_ros_x_habitat_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_x_habitat" "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_x_habitat" "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv" "geometry_msgs/Point:geometry_msgs/Pose:geometry_msgs/Quaternion"
 )
 
 #
@@ -99,7 +99,7 @@ _generate_srv_cpp(ros_x_habitat
 _generate_srv_cpp(ros_x_habitat
   "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_x_habitat
 )
 
@@ -180,7 +180,7 @@ _generate_srv_eus(ros_x_habitat
 _generate_srv_eus(ros_x_habitat
   "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ros_x_habitat
 )
 
@@ -261,7 +261,7 @@ _generate_srv_lisp(ros_x_habitat
 _generate_srv_lisp(ros_x_habitat
   "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_x_habitat
 )
 
@@ -342,7 +342,7 @@ _generate_srv_nodejs(ros_x_habitat
 _generate_srv_nodejs(ros_x_habitat
   "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ros_x_habitat
 )
 
@@ -423,7 +423,7 @@ _generate_srv_py(ros_x_habitat
 _generate_srv_py(ros_x_habitat
   "/home/sim2real/ep_ws/src/sim2real_ep/habitat_info/srv/GetAgentPose.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_x_habitat
 )
 
