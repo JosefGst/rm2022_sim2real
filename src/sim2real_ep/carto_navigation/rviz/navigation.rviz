@@ -7,7 +7,7 @@ Panels:
         - /TF1/Frames1
         - /Local Costmap1/Planner1
         - /Submaps1/Submaps1
-        - /ScanMatchedPoints1
+        - /Path2
       Splitter Ratio: 0.5
     Tree Height: 613
   - Class: rviz/Selection
@@ -28,7 +28,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: Scan
+    SyncSource: ScanMatchedPoints
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -63,6 +63,8 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
+        camera_aligned_depth_to_color_frame:
+          Value: true
         camera_bottom_screw_frame:
           Value: true
         camera_color_frame:
@@ -72,14 +74,6 @@ Visualization Manager:
         camera_depth_frame:
           Value: true
         camera_depth_optical_frame:
-          Value: true
-        camera_infra1_frame:
-          Value: true
-        camera_infra1_optical_frame:
-          Value: true
-        camera_infra2_frame:
-          Value: true
-        camera_infra2_optical_frame:
           Value: true
         camera_link:
           Value: true
@@ -105,17 +99,13 @@ Visualization Manager:
                 {}
               camera_bottom_screw_frame:
                 camera_link:
-                  camera_color_frame:
+                  camera_aligned_depth_to_color_frame:
                     camera_color_optical_frame:
                       {}
+                  camera_color_frame:
+                    {}
                   camera_depth_frame:
                     camera_depth_optical_frame:
-                      {}
-                  camera_infra1_frame:
-                    camera_infra1_optical_frame:
-                      {}
-                  camera_infra2_frame:
-                    camera_infra2_optical_frame:
                       {}
               imu_link:
                 {}
@@ -357,6 +347,54 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Queue Size: 10
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /move_base/DWAPlannerROS/global_plan
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 255; 0; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Queue Size: 10
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /move_base/DWAPlannerROS/local_plan
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -383,7 +421,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: 0
+      Angle: 0.09000005573034286
       Class: rviz/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -393,10 +431,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 124.07276153564453
+      Scale: 159.78453063964844
       Target Frame: <Fixed Frame>
-      X: 1.6720730066299438
-      Y: 0.35237154364585876
+      X: 0.8388040065765381
+      Y: 1.5755348205566406
     Saved: ~
 Window Geometry:
   Displays:
@@ -414,5 +452,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1528
-  X: 72
-  Y: 27
+  X: 323
+  Y: 95
