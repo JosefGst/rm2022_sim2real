@@ -25,6 +25,9 @@
   <!-- Map server -->
   <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
 
+    <!-- AMCL -->
+  <!-- <include file="$(find carto_navigation)/launch/amcl.launch"/> -->
+
   <!-- Cartographer localization -->
   <include file="$(find carto_navigation)/launch/cartographer_localization.launch" />
   
