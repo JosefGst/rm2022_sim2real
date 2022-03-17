@@ -2,7 +2,7 @@
   <!-- Arguments -->
   <arg name="method" default="dwa" doc="method type [teb, eband, dwa]"/>
   <arg name="cmd_vel_topic" default="/cmd_vel" />
-  <arg name="odom_topic" default="/ep/odom" />
+  <arg name="odom_topic" default="/odometry/filtered" />
   <arg name="move_forward_only" default="false"/>
 
   <!-- move_base -->

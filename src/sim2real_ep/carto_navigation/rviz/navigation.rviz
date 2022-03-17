@@ -28,7 +28,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ScanMatchedPoints
+    SyncSource: Scan
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -125,7 +125,7 @@ Visualization Manager:
       Color: 255; 0; 0
       Color Transformer: FlatColor
       Decay Time: 0
-      Enabled: false
+      Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
@@ -140,7 +140,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
-      Value: false
+      Value: true
     - Alpha: 0.699999988079071
       Class: rviz/Map
       Color Scheme: map
@@ -439,7 +439,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.358965873718262
+      Distance: 8.4324369430542
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -447,9 +447,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.5847161412239075
-        Y: 1.6564390659332275
-        Z: -0.1882430911064148
+        X: 0.5264503359794617
+        Y: 0.3020060658454895
+        Z: -0.18959680199623108
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -496,4 +496,4 @@ Window Geometry:
     collapsed: false
   Width: 1127
   X: 72
-  Y: 66
+  Y: 29
