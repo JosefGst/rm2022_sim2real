@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <launch>
   <!-- Arguments -->
-  <arg name="use_joy_stick" default="true"/>
+  <arg name="use_joy_stick" default="false"/>
   <arg name="open_rviz" default="true"/>
-  <arg name="open_reconfigure" default="false"/>
-  <arg name="map_file" default="$(find carto_navigation)/maps/map.yaml"/>
+  <arg name="open_reconfigure" default="true"/>
+  <arg name="map_file" default="$(find carto_navigation)/maps/mymap.yaml"/>
 
   <!-- joy control -->
   <include if="$(arg use_joy_stick)" file="$(find ep_teleop)/launch/joy_stick.launch"/>

@@ -196,7 +196,7 @@ Visualization Manager:
           Topic: /move_base/GlobalPlanner/plan
           Unreliable: false
           Value: true
-      Enabled: false
+      Enabled: true
       Name: Global Costmap
     - Class: rviz/Group
       Displays:
@@ -243,7 +243,7 @@ Visualization Manager:
           Topic: /move_base/DWAPlannerROS/local_plan
           Unreliable: false
           Value: true
-      Enabled: false
+      Enabled: true
       Name: Local Costmap
     - Alpha: 1
       Axes Length: 1
@@ -351,7 +351,7 @@ Visualization Manager:
       Buffer Length: 1
       Class: rviz/Path
       Color: 25; 255; 0
-      Enabled: true
+      Enabled: false
       Head Diameter: 0.30000001192092896
       Head Length: 0.20000000298023224
       Length: 0.30000001192092896
@@ -370,12 +370,12 @@ Visualization Manager:
       Shaft Length: 0.10000000149011612
       Topic: /move_base/DWAPlannerROS/global_plan
       Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
       Color: 255; 0; 0
-      Enabled: true
+      Enabled: false
       Head Diameter: 0.30000001192092896
       Head Length: 0.20000000298023224
       Length: 0.30000001192092896
@@ -394,17 +394,7 @@ Visualization Manager:
       Shaft Length: 0.10000000149011612
       Topic: /move_base/DWAPlannerROS/local_plan
       Unreliable: false
-      Value: true
-    - Alpha: 0.699999988079071
-      Class: rviz/Map
-      Color Scheme: costmap
-      Draw Behind: false
-      Enabled: true
-      Name: local_costmap
-      Topic: /move_base/local_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
+      Value: false
     - Alpha: 1
       Arrow Length: 0.30000001192092896
       Axes Length: 0.30000001192092896
@@ -449,7 +439,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 7.771594047546387
+      Distance: 5.358965873718262
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -457,17 +447,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.7965613603591919
-        Y: 1.090855360031128
-        Z: -0.18881173431873322
+        X: 0.5847161412239075
+        Y: 1.6564390659332275
+        Z: -0.1882430911064148
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.2647967338562012
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 4.978156089782715
+      Yaw: 4.728151321411133
     Saved:
       - Class: rviz/Orbit
         Distance: 7.771594047546387
@@ -506,4 +496,4 @@ Window Geometry:
     collapsed: false
   Width: 1127
   X: 72
-  Y: 103
+  Y: 66
