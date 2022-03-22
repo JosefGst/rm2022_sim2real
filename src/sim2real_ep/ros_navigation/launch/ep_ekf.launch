@@ -1,6 +1,6 @@
 <launch>
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se" clear_params="true">
-    <rosparam command="load" file="$(find ep_bringup)/param/my_ekf.yaml" />
+    <rosparam command="load" file="$(find ros_navigation)/param/my_ekf.yaml" />
 
     <!--  Placeholder for output topic remapping -->
     <!-- <remap from="odometry/filtered" to="odom"/> -->

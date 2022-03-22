@@ -10,4 +10,4 @@ oscillation_distance: 0.2
 clearing_rotation_allowed: false
 
 max_planning_retries: -1
-recovery_behavior_enabled: false
+recovery_behavior_enabled: true

@@ -2,6 +2,7 @@
   <!-- Arguments -->
   <arg name="map_file" default="$(find carto_navigation)/maps/map.yaml"/>
   <arg name="open_rviz" default="true"/>
+  <arg name="open_reconfigure" default="true"/>
   <arg name="move_forward_only" default="false"/>
 
   <!-- robot_description -->
@@ -14,7 +15,7 @@
   <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
 
   <!-- ekf -->
-  <include file="$(find ep_bringup)/launch/ep_ekf.launch"/>
+  <include file="$(find ros_navigation)/launch/ep_ekf.launch"/>
 
   <!-- AMCL -->
   <include file="$(find ros_navigation)/launch/amcl.launch"/>
@@ -29,4 +30,8 @@
     <node pkg="rviz" type="rviz" name="rviz" required="true"
           args="-d $(find carto_navigation)/rviz/navigation.rviz"/>
   </group>
+
+  <!-- rqt_reconfigure -->
+  <node if="$(arg open_reconfigure)" name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" />
+
 </launch>

@@ -1,0 +1,10 @@
+
+<launch>
+  
+  <!-- move_base -->
+  <include file="$(find carto_navigation)/launch/navigation.launch"/>
+
+  <!-- detect cube -->
+  <node pkg="ep_detect_and_grasp" name="main_task" type="main_task.py"/>
+
+</launch>

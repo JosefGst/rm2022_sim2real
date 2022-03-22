@@ -5,8 +5,8 @@ global_costmap:
   update_frequency: 1.0
   publish_frequency: 1.0
   transform_tolerance: 1.0
-  cost_scaling_factor: 3.0
-  inflation_radius: .55 #0.05
+  cost_scaling_factor: 10 #3.0
+  inflation_radius: 1 #.55 #0.05
   # static_map: true
 
   plugins:
